@@ -1,10 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mi primera web</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>En Uno Todo</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+
+    background: linear-gradient(
+        135deg,
+        #001f3f,
+        #003f5c,
+        #007b8a,
+        #00bcd4
+    );
+
+    background-size: 400% 400%;
+    animation: fondo 12s ease infinite;
+
+    color:white;
+    overflow:hidden;
+}
+
+@keyframes fondo{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+h1{
+    font-family:'Poppins', sans-serif;
+    font-size:4rem;
+    font-weight:300;
+    letter-spacing:5px;
+    text-shadow:0 0 20px rgba(0,255,255,0.4);
+}
+
+h2{
+    font-family:'Cinzel', serif;
+    font-size:5rem;
+    margin-top:10px;
+    color:#9dfcff;
+    text-shadow:
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 40px rgba(0,255,255,0.5);
+}
+
+.linea{
+    width:250px;
+    height:3px;
+    background:#9dfcff;
+    margin:25px auto;
+    border-radius:10px;
+    box-shadow:0 0 15px cyan;
+}
+
+p{
+    margin-top:20px;
+    font-family:'Poppins', sans-serif;
+    font-size:1.2rem;
+    color:#d9ffff;
+}
+</style>
 </head>
+
 <body>
-    <h1>¡Hola mundo!</h1>
-    <p>Esta es mi primera página web.</p>
+
+<h1>BIENVENIDOS A</h1>
+
+<div class="linea"></div>
+
+<h2>En Uno Todo</h2>
+
+<p>Tu portal donde encontrarás un poco de todo.</p>
+
 </body>
 </html>
